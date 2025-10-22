@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .gradient-text {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gradient-bg-1 {
+            background: var(--gradient-1);
+        }
+        
+        .gradient-bg-2 {
+            background: var(--gradient-2);
+        }
+        
+        .gradient-bg-3 {
+            background: var(--gradient-3);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .btn-gradient {
+            background: var(--gradient-1);
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+        
+        .skill-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            background: var(--gradient-1);
+            color: white;
+        }
+        
+        .project-img {
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: white;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold gradient-text fs-3" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center fade-in-up">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">
+                        <span class="gradient-text">Giovana</span>
+                    </h1>
+                    <p class="lead fs-3 text-secondary mb-5">
+                        Estudante de desenvolvimento de software
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#projetos" class="btn btn-gradient btn-lg px-4 py-3 rounded-pill">
+                            Ver Projetos
+                        </a>
+                        <a href="#contato" class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill">
+                            Entre em Contato
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="bg-white">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold mb-5 gradient-text">Sobre Mim</h2>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="rounded-4 overflow-hidden shadow-lg" style="height: 500px;">
+                        <img src="src/eu.jpeg" alt="Foto de perfil" class="w-100 h-100" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead mb-4">
+                        Sou estudante de tecnologia, curiosa por todas as areas e aspirante de cybersegurança.
+                    </p>
+                    <p class="lead mb-4">
+                        Atualmente estou focada em analise de dados e desenvolvimento web.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-primary rounded-pill px-4 py-2 fs-6">Python</span>
+                        <span class="badge bg-info rounded-pill px-4 py-2 fs-6">Data Science</span>
+                        <span class="badge bg-success rounded-pill px-4 py-2 fs-6">Web Dev</span>
+                    </div>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="https://github.com/giotrzz" target="_blank" class="btn btn-dark btn-lg rounded-pill px-4">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="src/giovanacv.pdf" download class="btn btn-gradient btn-lg rounded-pill px-4">
+                            <i class="bi bi-download"></i> Baixar Currículo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="bg-light">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold mb-5 gradient-text">Meus Projetos</h2>
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow card-hover h-100">
+                        <div class="project-img gradient-bg-1 rounded-top-4">
+                            📊
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title h4 fw-bold mb-3">Análise de Dados Censo 2022</h3>
+                            <p class="card-text text-secondary">
+                                Análise completa de dados demográficos e educacionais de São José dos Campos usando Python e pandas.
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                <span class="badge bg-primary rounded-pill">Python</span>
+                                <span class="badge bg-info rounded-pill">Pandas</span>
+                                <span class="badge bg-success rounded-pill">Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section id="habilidades" class="bg-white">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold mb-5 gradient-text">Habilidades</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 rounded-4 text-center p-4 skill-card h-100">
+                        <div class="card-body">
+                            <div class="mb-3" style="font-size: 4rem;">🐍</div>
+                            <h3 class="h4 fw-bold mb-3">Python</h3>
+                            <p class="mb-0">Pandas, NumPy, Matplotlib</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 rounded-4 text-center p-4 skill-card h-100">
+                        <div class="card-body">
+                            <div class="mb-3" style="font-size: 4rem;">📊</div>
+                            <h3 class="h4 fw-bold mb-3">Data Analysis</h3>
+                            <p class="mb-0">Excel, SQL, Visualização</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 rounded-4 text-center p-4 skill-card h-100">
+                        <div class="card-body">
+                            <div class="mb-3" style="font-size: 4rem;">💻</div>
+                            <h3 class="h4 fw-bold mb-3">Web Dev</h3>
+                            <p class="mb-0">HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 rounded-4 text-center p-4 skill-card h-100">
+                        <div class="card-body">
+                            <div class="mb-3" style="font-size: 4rem;">🎨</div>
+                            <h3 class="h4 fw-bold mb-3">Design</h3>
+                            <p class="mb-0">UI/UX, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center display-4 fw-bold mb-5 gradient-text">Entre em Contato</h2>
+                    <div class="card border-0 rounded-4 shadow-lg">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">Nome</label>
+                                    <input type="text" class="form-control form-control-lg rounded-3" placeholder="Seu nome">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">Email</label>
+                                    <input type="email" class="form-control form-control-lg rounded-3" placeholder="seu@email.com">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">Mensagem</label>
+                                    <textarea rows="5" class="form-control form-control-lg rounded-3" placeholder="Sua mensagem..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-gradient btn-lg w-100 rounded-3">
+                                    Enviar Mensagem
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="d-flex justify-content-center gap-4 mb-4">
+                        <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-github"></i> GitHub</a>
+                        <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-twitter"></i> Twitter</a>
+                        <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-envelope"></i> Email</a>
+                    </div>
+                    <p class="text-secondary mb-0">© 2024 Seu Nome. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
