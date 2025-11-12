@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio</title>
+    <title>Portfólio Giovana</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
@@ -83,6 +83,19 @@
         .navbar {
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
+
+        .bg-orange {
+            background-color: #ff9800;
+            color: white;
+        }
+        .bg-purple {
+            background-color: #A020F0;
+            color: white;
+        }
+        .bg-pink {
+            background-color: #FF00FF;
+            color: white;
+        }
         
         section {
             padding: 80px 0;
@@ -105,10 +118,10 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold gradient-text fs-3" href="#">Portfolio</a>
+            <a class="navbar-brand fw-bold gradient-text fs-3" href="#">Portfólio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -124,14 +137,13 @@
                         <a class="nav-link" href="#habilidades">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link" href="#cursos">Cursos e certificações</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
             <div class="row justify-content-center text-center fade-in-up">
@@ -146,8 +158,8 @@
                         <a href="#projetos" class="btn btn-gradient btn-lg px-4 py-3 rounded-pill">
                             Ver Projetos
                         </a>
-                        <a href="#contato" class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill">
-                            Entre em Contato
+                        <a href="#footer" class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill">
+                            Redes Socias
                         </a>
                     </div>
                 </div>
@@ -155,7 +167,6 @@
         </div>
     </section>
 
-    <!-- Sobre Section -->
     <section id="sobre" class="bg-white">
         <div class="container">
             <h2 class="text-center display-4 fw-bold mb-5 gradient-text">Sobre Mim</h2>
@@ -167,21 +178,38 @@
                 </div>
                 <div class="col-lg-6">
                     <p class="lead mb-4">
-                        Sou estudante de tecnologia, curiosa por todas as areas e aspirante de cybersegurança.
+                        Olá! Meu nome é Giovana, sou estudante de tecnologia e movida por uma curiosidade constante que me motiva 
+                        a aprender e explorar novas áreas, especialmente cibersegurança e análise de dados.
+                        Atualmente, estou iniciando minha jornada no curso superior de Desenvolvimento de Software multiplataforma, uma formação moderna e inovadora 
+                        que une conhecimentos essenciais da área da computação, como sistemas operacionais, lógica e matemática aplicada, com o estudo de tecnologias contemporâneas 
+                        voltadas ao desenvolvimento de múltiplos tipos de software, abrangendo soluções web, mobile, inteligência artificial, banco de dados e computação em nuvem.
                     </p>
                     <p class="lead mb-4">
-                        Atualmente estou focada em analise de dados e desenvolvimento web.
+                       Minha paixão pela tecnologia começou ainda no ensino médio, quando cursei o técnico em Informática. Durante essa formação, adquiri bases sólidas em lógica de programação,
+                        hardware, redes e sistemas operacionais, além de desenvolver habilidades como organização, trabalho em equipe e inovação.
+                    </p>
+                    <p class="lead mb-4">
+                        Agora, no ensino superior, tenho me dedicado a desenvolver competências técnicas em linguagens de programações e tecnologias voltadas ao mercado de trabalho. 
+                        além de explorar a integração entre análise de dados e design de interfaces.
+                        Também estou aprendendo a aplicar metodologias ágeis (SCRUM) e a participar de projetos colaborativos, experiências que vêm fortalecendo
+                        minhas habilidades de comunicação, empatia e pensamento crítico.
                     </p>
                     <div class="d-flex gap-2 flex-wrap">
                         <span class="badge bg-primary rounded-pill px-4 py-2 fs-6">Python</span>
                         <span class="badge bg-info rounded-pill px-4 py-2 fs-6">Data Science</span>
-                        <span class="badge bg-success rounded-pill px-4 py-2 fs-6">Web Dev</span>
+                        <span class="badge bg-pink rounded-pill px-4 py-2 fs-6">HTML</span>
+                        <span class = "badge bg-purple rounded-pill px-4 py-2 fs-6">CSS</span>
+                        <span class = "badge bg-secondary rounded-pill px-4 py-2 fs-6">Flask</span>
+                        <span class = "badge bg-warning rounded-pill px-4 py-2 fs-6">JavaScript</span>
+                        <span class = "badge bg-success rounded-pill px-4 py-2 fs-6">Bootstrap</span>
+                        <span class = "badge bg-orange rounded-pill px-4 py-2 fs-6">SQL</span>
+
                     </div>
                     <div class="d-flex gap-3 mt-4">
                         <a href="https://github.com/giotrzz" target="_blank" class="btn btn-dark btn-lg rounded-pill px-4">
                             <i class="bi bi-github"></i> GitHub
                         </a>
-                        <a href="src/giovanacv.pdf" download class="btn btn-gradient btn-lg rounded-pill px-4">
+                        <a href="src/giovanatcv.pdf.pdf" download class="btn btn-gradient btn-lg rounded-pill px-4">
                             <i class="bi bi-download"></i> Baixar Currículo
                         </a>
                     </div>
@@ -201,14 +229,22 @@
                             📊
                         </div>
                         <div class="card-body p-4">
-                            <h3 class="card-title h4 fw-bold mb-3">Análise de Dados Censo 2022</h3>
+                            <h3 class="card-title h4 fw-bold mb-3">Análise de Dados dos Censos</h3>
                             <p class="card-text text-secondary">
-                                Análise completa de dados demográficos e educacionais de São José dos Campos usando Python e pandas.
+                                Análise e coleta de dados demográficos, educacionais e sociais de São José dos Campos e região utilizando Python e pandas.
+                            </p>
+                            <p class = "card-text text-secondary">
+                                Projeto de faculdade desenvolvido em equipe na metodologia ágil SCRUM. Desenvolvi papel de scrum master, participando
+                                ativamente no gerenciamento do time e auxiliando meus companheiros nas tarefas de desenvolvimento e análises de dados. 
                             </p>
                             <div class="d-flex gap-2 flex-wrap mt-3">
                                 <span class="badge bg-primary rounded-pill">Python</span>
                                 <span class="badge bg-info rounded-pill">Pandas</span>
                                 <span class="badge bg-success rounded-pill">Matplotlib</span>
+                                <span class = "badge bg-orange rounded-pill">Google Colab</span>
+                                <span class = "badge bg-pink rounded-pill">HTML</span>
+                                <span class = "badge bg-purple rounded-pill">CSS</span>
+                                <span class = "badge bg-secondary rounded-pill">Flask</span>
                             </div>
                         </div>
                     </div>
@@ -259,52 +295,47 @@
         </div>
     </section>
 
-    <section id="contato" class="bg-light">
+    <section id="cursos" class="bg-light">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-center display-4 fw-bold mb-5 gradient-text">Entre em Contato</h2>
-                    <div class="card border-0 rounded-4 shadow-lg">
-                        <div class="card-body p-5">
-                            <form>
-                                <div class="mb-4">
-                                    <label class="form-label fw-semibold">Nome</label>
-                                    <input type="text" class="form-control form-control-lg rounded-3" placeholder="Seu nome">
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label fw-semibold">Email</label>
-                                    <input type="email" class="form-control form-control-lg rounded-3" placeholder="seu@email.com">
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label fw-semibold">Mensagem</label>
-                                    <textarea rows="5" class="form-control form-control-lg rounded-3" placeholder="Sua mensagem..."></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-gradient btn-lg w-100 rounded-3">
-                                    Enviar Mensagem
-                                </button>
-                            </form>
+            <h2 class="text-center display-4 fw-bold mb-5 gradient-text">Cursos e Certificações</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow card-hover h-100">
+                        <div class="gradient-bg-2 text-white text-center py-5 rounded-top-4"style="font-size: 4rem;">🎓</div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title h4 fw-bold mb-2">Escola de inovadores</h3>
+                            <p class="text-secondary mb-3">
+                                Programa voltado à formação de empreendedores inovadores.
+                                Durante o curso, aprendi a transformar ideias em soluções reais, aplicando ferramentas de gestão,
+                                inovação e design thinking para estruturar um projeto com potencial de impacto social e tecnológico.
+                            </p>
+                            <a href="src/cetificado_escola_inovadores.pdf" target="_blank" class="btn btn-gradient btn-sm rounded-pill px-3">
+                                <i class="bi bi-box-arrow-up-right"></i> Ver Certificado
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
 
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="d-flex justify-content-center gap-4 mb-4">
-                        <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                        <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-github"></i> GitHub</a>
-                        <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-twitter"></i> Twitter</a>
-                        <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-envelope"></i> Email</a>
-                    </div>
-                    <p class="text-secondary mb-0">© 2024 Seu Nome. Todos os direitos reservados.</p>
-                </div>
-            </div>
+
+<footer id= "footer" class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="d-flex justify-content-center gap-4 mb-4">
+          <a href="https://www.linkedin.com/in/Giovana Tarozo" target="_blank" class="text-white text-decoration-none fs-5">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/giotrzz" target="_blank" class="text-white text-decoration-none fs-5">
+            <i class="bi bi-github"></i> GitHub
+          </a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
